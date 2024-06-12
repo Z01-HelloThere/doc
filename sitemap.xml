@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/nicgen/pukei-pukei/education/</loc>
+         <lastmod>2024-06-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/nicgen/pukei-pukei/snippets/go/</loc>
          <lastmod>2024-06-12</lastmod>
          <changefreq>daily</changefreq>
