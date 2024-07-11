@@ -1,0 +1,44 @@
+# doc site configuration (mkdocs                    )
+site_name: Z01P24 docs  
+site_description: Documentation for the students of Zone01 Promotion 2024
+theme:
+  name: material
+nav:
+  - 'Home': 'index.md'
+  - 'User Guide': 'user-guide.md'
+  - 'Links': './infos/links.md'
+  - 'About': 'about.md'
+  - 'Git':
+    - 'Useful commands': './git/commands.md'
+  - 'Go':
+    - ''
+  - 'Projects':
+    - 'Ask for the GitHub education package': projects/ask-github-edu.md
+    - 'Create your personal website': projects/personal_page.md
+  - 'Sandbox':
+    - 'Sandbox': './sandbox/tests.md'
+  # - 'Bug Tracker': '/bugs/'
+not_in_nav: |
+  /private.md
+# ignore
+exclude_docs: |
+  api-config.json    # A file with this name anywhere.
+  /requirements.txt  # Top-level "docs/requirements.txt".
+  *.py               # Any file with this extension anywhere.
+  !.assets  # Don't exclude '.assets' although all other '.*' are excluded
+plugins:
+  - search
+  - toggle-sidebar
+  - mermaid2
+  # - mermaid2:
+  #   version: '9.4.3' # only works with version < 10
+  #   arguments:
+  #     theme: 'dark'
+  #     themeVariables:
+  #       primaryColor: '#BB2528'
+  #       primaryTextColor: '#fff'
+  #       primaryBorderColor: '#7C0000'
+  #       lineColor: '#F8B229'
+  #       secondaryColor: '#006100'
+  #       tertiaryColor: '#fff'
+  # - navigation.tabs
