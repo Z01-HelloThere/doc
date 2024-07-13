@@ -1,23 +1,9 @@
-# doc site configuration (mkdocs                    )
-site_name: Z01P24 docs  
+# doc site configuration (mkdocs)
+site_name: Hello There - documentation 
 site_description: Documentation for the students of Zone01 Promotion 2024
 theme:
   name: material
-nav:
-  - 'Home': 'index.md'
-  - 'User Guide': 'user-guide.md'
-  - 'Links': './infos/links.md'
-  - 'About': 'about.md'
-  - 'Git':
-    - 'Useful commands': './git/commands.md'
-  - 'Go':
-    - ''
-  - 'Projects':
-    - 'Ask for the GitHub education package': projects/ask-github-edu.md
-    - 'Create your personal website': projects/personal_page.md
-  - 'Sandbox':
-    - 'Sandbox': './sandbox/tests.md'
-  # - 'Bug Tracker': '/bugs/'
+  logo: material/library
 not_in_nav: |
   /private.md
 # ignore
@@ -26,6 +12,17 @@ exclude_docs: |
   /requirements.txt  # Top-level "docs/requirements.txt".
   *.py               # Any file with this extension anywhere.
   !.assets  # Don't exclude '.assets' although all other '.*' are excluded
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
 plugins:
   - search
   - toggle-sidebar
