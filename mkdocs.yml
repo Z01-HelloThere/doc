@@ -4,8 +4,12 @@ site_description: Documentation for the students of Zone01 Promotion 2024
 theme:
   name: material
   logo: material/library
+  features:
+    - navigation.tabs
 not_in_nav: |
   /private.md
+  /about.md
+  /user-guide.md
 # ignore
 exclude_docs: |
   api-config.json    # A file with this name anywhere.
@@ -21,21 +25,12 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
 plugins:
   - search
   - toggle-sidebar
   - mermaid2
-  # - mermaid2:
-  #   version: '9.4.3' # only works with version < 10
-  #   arguments:
-  #     theme: 'dark'
-  #     themeVariables:
-  #       primaryColor: '#BB2528'
-  #       primaryTextColor: '#fff'
-  #       primaryBorderColor: '#7C0000'
-  #       lineColor: '#F8B229'
-  #       secondaryColor: '#006100'
-  #       tertiaryColor: '#fff'
   # - navigation.tabs
