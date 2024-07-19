@@ -67,22 +67,3 @@ git checkout <commit> path/to/file
 # and commit this modification
 git commit
 ```
-
-----------------------------------------------
-GitHub
-
-1st create a new repository on github
-Tell github where you want to up files
-git remote add origin https://github.com/ngenty/projectname.git
-then push files
-git push -u origin master
-
-clone repository
-git clone https://github.com/…
-
-pull
-git pull - origin master
-
-upstream and sync to the master
-see https://help.github.com/articles/configuring-a-remote-for-a-fork/
-

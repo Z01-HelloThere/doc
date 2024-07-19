@@ -17,4 +17,3 @@ signal          :simple-signal:
 ## Social links
 
 - Nicolas 'Rōshi' Genty [:simple-github:](https://github.com/nicgen) [:simple-mastodon:](https://mastodon.social/@nicgen) [:material-key:](keyoxide) [:simple-linkedin:]()
-

@@ -1,5 +1,7 @@
 # How to create and launch a VM
 
+<!-- this file is incompatible with Joplin -->
+
 ## Requirement
 
   - Virtualbox
@@ -11,11 +13,53 @@
 
 - [doc](https://developer.hashicorp.com/vagrant/install)
 
-```sh
-wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update && sudo apt install vagrant
-```
+=== "ubuntu"
+
+    ```sh
+    wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    sudo apt update && sudo apt install vagrant
+    ```
+
+=== "fedora"
+
+    ```sh
+    sudo dnf install -y dnf-plugins-core
+    sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/fedora/hashicorp.repo
+    sudo dnf -y install vagrant
+    ```
+
+=== "homebrew"
+
+    ```sh
+    brew tap hashicorp/tap
+    brew install hashicorp/tap/vagrant
+    ```
+
+
+### test
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
 
 ## commands (basics)
 
@@ -29,6 +73,7 @@ cmd | desc.
 `vagrant ssh <vm target>` | Connect to machine via SSH
 `vagrant box update` | To start a vm
 `vagrant box list` | List all local boxes
+`vagrant box update` | 
 
 ## configuration file (Vagrantfile)
 
@@ -56,7 +101,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "playbook.yml"
   end
-  
+
   # app server
   config.vm.define "app1" do |app|
     app.vm.hostname = "orc-app1.test"

@@ -1,10 +1,13 @@
-# Welcome to MkDocs
+# Hello-There
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Our repo for our documentation.
 
-## Commands
+- [GitHub](https://github.com/Z01P24/doc)
 
-* `mkdocs new [dir-name]` - Create a new project.
+Fork the repo, make your changes and make a new pull request.
+
+## Usage
+
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print help message and exit.
