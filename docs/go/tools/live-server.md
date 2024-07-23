@@ -118,3 +118,7 @@ keep_scroll = true
   proxy_port = 8090
   app_port = 8080
 ```
+
+## links
+
+- [Using Air with Go to implement live reload](https://blog.logrocket.com/using-air-go-implement-live-reload/)

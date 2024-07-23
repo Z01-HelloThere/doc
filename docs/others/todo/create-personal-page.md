@@ -9,10 +9,37 @@
 
 ## Requirement
 
-- an education account: [How to create an education](./ask-github-edu.md)
+- a [GitHub](https://github.com) account
 - an account on [Cloudflare](https://www.cloudflare.com/)
+- optional
+  - an education account: [How to create an education](./ask-github-edu.md)
 
 ## Create a domain name on CloudFlare
+
+- Buy a domain name.
+
+> If you need a `com`, `net`, `org` or `dev` go to [clouflare](https://www.infomaniak.com/en/domains), if you need a `fr` go to [infomaniak](https://www.infomaniak.com/en/domains)
+
+Register your newly created domain to your github account:
+
+- in [GitHub](https://github.com)
+  - click on your **profile icon** (top right)
+  - click on **settings***
+  - go to **pages** in **Code, planning, and automation**
+  - enter your domain name
+  - copy the **TXT record**
+- in [Cloudlfare](https://dash.cloudflare.com)
+  - go to your dashboard / Websites
+  - select your domain name
+  - select DNS / DNS Records (right)
+  - in **DNS management** click the blue button **+ Add record**  
+  ![cloudlfare](/assets/img/create-personal-page-cloudflare-txt-records.png)
+  - enter the name and the content as asked by GitHub
+  - click save
+  - wait a few hours
+- in [GitHub](https://github.com/settings/pages)
+  - create a new repository (usually choose your domain name)
+  - 
 
 - Go to your dash/interface CloudFlare
 - 

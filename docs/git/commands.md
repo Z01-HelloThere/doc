@@ -3,7 +3,7 @@
 <!-- for Joplin users -->
 <!-- ${toc} -->
 
-### initialiser un projet
+### initialise a project
 
 ```sh
 git init
