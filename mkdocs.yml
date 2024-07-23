@@ -45,12 +45,14 @@ not_in_nav: |
   /about.md
   /user-guide.md
   /sandbox/private.md
+
 # ignore
 exclude_docs: |
   api-config.json    # A file with this name anywhere.
   /requirements.txt  # Top-level "docs/requirements.txt".
   *.py               # Any file with this extension anywhere.
   !.assets  # Don't exclude '.assets' although all other '.*' are excluded
+  /HTML-CSS/* # unfinished
 markdown_extensions:
   - attr_list
   - pymdownx.details
@@ -70,3 +72,8 @@ plugins:
   - mermaid2
   - search
   - toggle-sidebar
+# todo
+# search and add a snippets manager
+# create a personal index with our "Hello There" dude
+# stick all the indexes to the top
+# 
