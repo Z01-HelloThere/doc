@@ -1,12 +1,12 @@
 # Live server
 
-> 
+> Because you don't want to reload your go server after each changes you've made.
 
 # AIR
 
 - [GitHub](https://github.com/air-verse/air)
 
-## installation
+## Installation
 
 - with Go
 
@@ -15,7 +15,7 @@
 go install github.com/air-verse/air@latest
 ```
 
-## usage
+## Usage
 
 ```sh
 # firstly find `.air.toml` in current directory, if not found, use defaults
@@ -26,14 +26,15 @@ air init
 air
 ```
 
-> note: You'll need to create an alias before being able to launch an air command.  
+> Note: You'll need to create an alias before being able to launch an air command.  
 > For that you need to add a command to your bash configuration file (often `.bashrc` or `.profile` or `.zhrc` if you installed the Zsh shell, etc.)
 
 ```sh
 echo "alias air='\$(go env GOPATH)/bin/air'" >> ~/.bashrc
 ```
 
-## configuration (.air.toml)
+<!-- not needed since it's aleady created after an init
+## Configuration (.air.toml)
 
 ```ruby title=".air.toml" linenums="1"
 # Config file for [Air](https://github.com/air-verse/air) in TOML format
@@ -117,7 +118,7 @@ keep_scroll = true
   enabled = true
   proxy_port = 8090
   app_port = 8080
-```
+``` -->
 
 ## links
 
