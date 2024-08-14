@@ -63,7 +63,7 @@ for i := 0; i < 10; i++ {
 }
 ```
 We then add an array that will append new values of the converted bytes values.  
-We use the int as an index of the tabascii array for 2 reasons:
+We use the int as an index of the tabascii array for 2 reasons:  
 - First we have an int and it's easier to deal with string with z01.PrintRune. So that way we get the **string value of our int without converting it**  
 - If our int is above 9, which is supposed to happend since we're dealing with base 16. That way if we have 10 as an int, it will convert it to "a".  
 
