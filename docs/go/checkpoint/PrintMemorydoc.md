@@ -42,7 +42,7 @@ for i := 0; i < 10; i++ {
 }
 ```
 We iterate over the byte array and **store 2 values.**  
-- **The result of the division by 16.**
+- **The result of the division by 16.**  
 - **The rest of the division by 16.**  
 For example the letter "h" is 104 on the ascii table.   
 We can divide it 6 times by 16     -> **16 x 6 = 96.**  
