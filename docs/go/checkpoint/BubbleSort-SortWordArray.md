@@ -46,8 +46,8 @@ if tabWord[j] < tabWord[j + 1] {}
 
 ### Third step
 
-What we did just now only sorted a single value. Here is what happend on the entire for loop:  
-(values in quotes are both the values and the one next to it compared)
+What we did just now only sorted a single value. Here is what happend on the entire **for** loop:  
+(values in quotes are both the value and the one next to it compared)
 ```go
 1:  "3" -> "2" ->  a  ->  b  ->  1  ->  c 
 2:   2  -> "3" -> "a" ->  b  ->  1  ->  c  
@@ -56,7 +56,7 @@ What we did just now only sorted a single value. Here is what happend on the ent
 5:   2  ->  3  ->  a  ->  1  -> "b" -> "c" 
 6:   2  ->  3  ->  a  ->  1  ->  b  ->  c 
 ```
-By doing that **we only sorted 1 value**, which is c on our example. To be able to sort that array **we will have to repeat that loop for the number of values if have in it.**  
+By doing that **we only sorted 1 value**, which is c on our example. To be able to sort that array **we will have to repeat that loop for the number of values in our array.**  
 To do that we simply use a for loop:
 ```go
 for i := 0; i < len(tabWord) - 1; i++ {
