@@ -107,7 +107,7 @@ Here is what the next steps looks like:
 ```go
 tabWord := []string{"3", "2", "a", "b", "1", "c"}
 for i := 0; i < len(tabWord) - 1; i++ {
-  for j := i; j < len(tabWord) - 1 - i; j++ {
+  for j := 0; j < len(tabWord) - 1 - i; j++ {
     if tabWord[j] > tabWord[j+1] {
       tabWord[j], tabWord[j+1] = tabWord[j+1], tabWord[j]
     }
