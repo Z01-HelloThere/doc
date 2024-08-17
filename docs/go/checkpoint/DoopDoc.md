@@ -5,7 +5,7 @@ Doop is a function that takes **3 command-line arguments: two numbers and an ope
 
 In this exercice you don't have access to strconv package, which contains the tools to transform int and strings.  
 We will need to perform arithmetic operations on our arguments, that are strings, so we will have to convert them to int.  
-To show the result with z01.PrintRune function, we will need to swap it back to string, so understanding or **Itoa and Atoi functions are needed for this exercice.**  
+To show the result with z01.PrintRune function, we will need to swap it back to string, so understanding of **Itoa and Atoi functions are needed for this exercice.**  
 
 ### PrintStr function
 We will use a simple function called PrintStr that will allow us to print strings.
