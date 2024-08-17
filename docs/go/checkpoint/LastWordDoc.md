@@ -72,10 +72,13 @@ return s[start:end+1] + "\n"
 
 ```go
 func lastword(s string) string {
+  // first step
 	start := 0
 	end := 0
 	condition := true
+  // second step
 	for i := len(s) - 1; i >= 0; i-- {
+    // third step
 		if s[i] != ' ' && condition {
 			end = i
 			condition = false
@@ -84,6 +87,7 @@ func lastword(s string) string {
 			i = 0
 		}
 	}
+  // last step
 	return s[start:end+1] + "\n"
 }
 ```
