@@ -1,4 +1,4 @@
-# How to write the Atoi function
+# Atoi
 
 ## What's Atoi
 

@@ -1,4 +1,4 @@
-# What's Rostring
+# Rostring
 
 Rostring is an exercice that ask you to move the first word at the end of a sentence.
 
