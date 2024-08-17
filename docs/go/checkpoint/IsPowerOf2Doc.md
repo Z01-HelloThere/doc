@@ -84,7 +84,7 @@ func IsPowerof2() {
 		return
 	}
   // final step
-	for i := 2; i < number; i = i * 2 {
+	for i := 2; i <= number; i = i * 2 {
 		if i == number {
 			PrintStr("true")
 			return
