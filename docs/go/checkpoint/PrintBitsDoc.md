@@ -31,8 +31,8 @@ if len(os.Args) != 2 {
 ### Second step
 
 We then settup some variables
-- **result:** variable that will store the convertion of our given int.  
-- **number:** int convertion of our os.Args[1].
+- **result:** variable that will store the convertion of our given int.   
+- **number:** int convertion of our os.Args[1].  
 - **base:** A string array that will contain every possible cases of our base. We can add more values if we want to change the base. (here base 2: 2 possible values).  
 
 ```go
