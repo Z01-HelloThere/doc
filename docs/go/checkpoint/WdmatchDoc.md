@@ -71,7 +71,35 @@ if arg1[i] == arg2[j] {
 
 ### Fifth step
 
+**This rewrite must respect the order in which these characters appear in the second string.**  
+Because of that, everytime two letters match, we need to go from the index of the next letter we found.  
+So the j loop won't start at 0 everytime but a given variable that will change when the letters will match.  
 
+```go
+index := 0
+for i := 0; i < len(arg1); i++ {
+	for j := index; j < len(arg2); j++ {
+		if arg1[i] == arg2[j] {
+			result += string(arg1[i])
+			index = j
+			break
+		}
+	}
+}
+```
+**So the next j loop, it will store previous index.**  
+Also once we found a letter, **we need to break** so we look for another letter.  
+
+### Sixth and final step
+
+We then compare the result variable to the original os.Args[1].  
+**If those two are equal, that means that the os.Args[1] is contained in the os.Args[2].**  
+```go
+if result == arg1 {
+	PrintStr(result)
+}
+```
+We then print the result, otherwise we don't print anything.  
 
 ## Full code
 
