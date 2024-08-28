@@ -12,11 +12,17 @@ The function will divide the number by the first prime number until the modulo i
 
 Example:
 ```txt
-First prime number (3):
+First prime number (2):
+225225 / 2 = 112612.5
+(rest different than 0, we ignore that operation and go to the next prime number).
+
+Second prime number (3):
 225225 / 3 = 75075
 75075 / 3 = 25025
 25025 / 3 = 8341.6 
 (rest different than 0, we ignore that operation and go to the next prime number).
+
+Third prime number (5):
 25025 / 5 = 5005
 5005 / 5 = 1001
 1001 / 5 = 200.2
