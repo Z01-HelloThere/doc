@@ -48,7 +48,17 @@ note: That step is very important because on the following steps we are going to
 
 A boolean variable can store 2 different values, true and false.
 If the condition is filled, then we set our boolean value to true and we remove the minus sign from the string.
-That boolean value is important because it will tell our program that we changed the value of our int.
+That boolean value is important because it will tell our program that we changed the value of our int.  
+
+```go
+if s[0] == '-' {
+  isNegative = true
+  s = s[1:]
+} else if s[0] == "+" {
+  s = s[1:]
+}
+```
+We also need to take care of the potential + sign before the number.  
 
 ### Third step
 
@@ -107,6 +117,8 @@ func Atoi(s string) int {
   // second step
   if s[0] == '-' {
     isNegative = true
+    s = s[1:]
+  } else if s[0] == "+" {
     s = s[1:]
   }
 
