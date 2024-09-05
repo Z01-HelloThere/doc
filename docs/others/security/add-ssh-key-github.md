@@ -71,7 +71,7 @@ git commit -S -m "Your commit message"
 
 Add this script to a ~/.ssh/ssh-agent-start.sh file.
 
-```sh file=~/.ssh/ssh-agent-start.sh
+```sh title="~/.ssh/ssh-agent-start.sh"
 SSH_ENV="$HOME/.ssh/agent-environment"
 
 function start_agent {
