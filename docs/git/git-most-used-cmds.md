@@ -52,6 +52,12 @@ git push -d <remote_name> <branchname>
 git branch -d <branchname>
 ```
 
+#### Update the list of the remote repositories
+
+```sh
+git fetch --prune
+```
+
 ### Naming conventions
 
 #### **Branch Names**
@@ -88,11 +94,7 @@ To retrieve the remote listing, changes, branches (without merging)
 
 #### Commit
 
-
-
 #### Push
-
-
 
 #### Conflicts
 
@@ -112,80 +114,80 @@ Best Practices:
 
 1. Create a clear and concise commit message:
 
-- Use the imperative mood (e.g., "Fix bug" instead of "Fixed bug").
-- Keep the first line short (less than 50 characters).
-- Use a blank line to separate the summary from the body.
-- Use bullet points or paragraphs to explain the changes.
-- [Source: GitHub documentation - Commit messages](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#commit-messages)
+    - Use the imperative mood (e.g., "Fix bug" instead of "Fixed bug").
+    - Keep the first line short (less than 50 characters).
+    - Use a blank line to separate the summary from the body.
+    - Use bullet points or paragraphs to explain the changes.
+    - [Source: GitHub documentation - Commit messages](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#commit-messages)
 
 2. Use branches:
 
-- Create a new branch for each feature or task.
-- Use descriptive branch names (e.g., "feature/new-login-system").
-- Keep the main branch (usually master) clean and stable.
-- [Source: GitHub documentation - Branching and merging](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#branching-and-merging)
+    - Create a new branch for each feature or task.
+    - Use descriptive branch names (e.g., "feature/new-login-system").
+    - Keep the main branch (usually master) clean and stable.
+    - [Source: GitHub documentation - Branching and merging](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#branching-and-merging)
 
 3. Use pull requests:
 
-- Create a pull request to merge changes into the main branch.
-- Use a descriptive title and description for the pull request.
-- Assign reviewers to the pull request.
-- [Source: GitHub documentation - About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+    - Create a pull request to merge changes into the main branch.
+    - Use a descriptive title and description for the pull request.
+    - Assign reviewers to the pull request.
+    - [Source: GitHub documentation - About pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 
 4. Regularly pull and merge:
 
-- Regularly pull changes from the main branch.
-- Merge changes into your local branch.
-- Use `git pull --rebase` to rebase your local branch on top of the main branch.
-- [Source: GitHub documentation - Syncing your branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#syncing-your-branch)
+    - Regularly pull changes from the main branch.
+    - Merge changes into your local branch.
+    - Use `git pull --rebase` to rebase your local branch on top of the main branch.
+    - [Source: GitHub documentation - Syncing your branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#syncing-your-branch)
 
 5. Use GitHub Actions:
 
-- Use GitHub Actions to automate workflows.
-- Use GitHub Actions to run tests and build code.
-- [Source: GitHub documentation - GitHub Actions](https://docs.github.com/en/actions)
+    - Use GitHub Actions to automate workflows.
+    - Use GitHub Actions to run tests and build code.
+    - [Source: GitHub documentation - GitHub Actions](https://docs.github.com/en/actions)
 
 6. Keep commits small:
 
-- Break down large changes into smaller commits.
-- Use `git add -p` to stage changes incrementally.
-- Use `git commit --amend` to amend the previous commit.
-- [Source: GitHub documentation - Committing changes](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#committing-changes)
+    - Break down large changes into smaller commits.
+    - Use `git add -p` to stage changes incrementally.
+    - Use `git commit --amend` to amend the previous commit.
+    - [Source: GitHub documentation - Committing changes](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#committing-changes)
 
 7. Use descriptive branch names:
 
-- Use descriptive branch names (e.g., "feature/new-login-system").
-- Avoid using branch names that are too short or vague.
-- [Source: GitHub documentation - Branching and merging](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#branching-and-merging)
+    - Use descriptive branch names (e.g., "feature/new-login-system").
+    - Avoid using branch names that are too short or vague.
+    - [Source: GitHub documentation - Branching and merging](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#branching-and-merging)
 
 8. Avoid committing unnecessary files:
 
-- Use `.gitignore` to ignore unnecessary files.
-- Avoid committing build artifacts or temporary files.
-- [Source: GitHub documentation - Ignoring files](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#ignoring-files)
+    - Use `.gitignore` to ignore unnecessary files.
+    - Avoid committing build artifacts or temporary files.
+    - [Source: GitHub documentation - Ignoring files](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#ignoring-files)
 
 Working Correctly in a Group:
 
 1. Communicate with your team:
 
-- Use GitHub Discussions to discuss changes.
-- Use GitHub Issues to track bugs and feature requests.
-- [Source: GitHub documentation - GitHub Discussions](https://docs.github.com/en/discussions)
+    - Use GitHub Discussions to discuss changes.
+    - Use GitHub Issues to track bugs and feature requests.
+    - [Source: GitHub documentation - GitHub Discussions](https://docs.github.com/en/discussions)
 
 2. Use a consistent workflow:
 
-- Establish a consistent workflow that everyone follows.
-- Use GitHub Projects to track progress.
-- [Source: GitHub documentation - GitHub Projects](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards)
+    - Establish a consistent workflow that everyone follows.
+    - Use GitHub Projects to track progress.
+    - [Source: GitHub documentation - GitHub Projects](https://docs.github.com/en/issues/organizing-your-work-with-project-boards/managing-project-boards)
 
 3. Review each other's code:
 
-- Use GitHub Code Review to review code.
-- Use GitHub Code Review to leave comments and suggestions.
-- [Source: GitHub documentation - Code review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-code-review)
+    - Use GitHub Code Review to review code.
+    - Use GitHub Code Review to leave comments and suggestions.
+    - [Source: GitHub documentation - Code review](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-code-review)
 
 4. Use GitHub Teams:
 
-- Use GitHub Teams to manage access and permissions.
-- Use GitHub Teams to assign roles and responsibilities.
-- [Source: GitHub documentation - GitHub Teams](https://docs.github.com)
+    - Use GitHub Teams to manage access and permissions.
+    - Use GitHub Teams to assign roles and responsibilities.
+    - [Source: GitHub documentation - GitHub Teams](https://docs.github.com)
